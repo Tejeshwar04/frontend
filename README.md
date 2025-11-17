@@ -23,20 +23,55 @@ A modern, responsive travel booking website built with HTML, CSS (Tailwind), and
 ## Project Structure
 
 ```
-project/
+frontend/responsive-interactive-web/
 ├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+├── assets/
+│   └── images/
+├── dist/
+│   └── output.css
 ├── src/
+│   ├── css/
+│   │   ├── components.css
+│   │   ├── tailwind.css
+│   │   └── utilities.css
 │   └── js/
+│       ├── api.js
+│       ├── components.js
 │       └── index.js
-└── assets/
-    └── images/
+└── node_modules/
 ```
 
 ## Setup
 
 1. Clone the repository
-2. Ensure all images are placed in the `assets/images/` folder
-3. Open `index.html` in your browser
+```bash
+git clone <repository-url>
+cd frontend/responsive-interactive-web
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Ensure all images are placed in the `assets/images/` folder
+
+4. Open `index.html` in your browser
+
+## Creating CSS Files via Terminal
+
+If you need to recreate the CSS structure:
+
+**Windows (PowerShell):**
+```powershell
+New-Item -Path "src/css" -ItemType Directory -Force
+New-Item -Path "src/css/components.css" -ItemType File
+New-Item -Path "src/css/tailwind.css" -ItemType File
+New-Item -Path "src/css/utilities.css" -ItemType File
+```
 
 ## Usage
 
