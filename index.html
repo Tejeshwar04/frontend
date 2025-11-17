@@ -1,0 +1,1474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travila | Discover the World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./src/js/index.js"></script>
+    <style>
+      * {
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+      
+      .hero-section {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+                          url('./assets/images/img1.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 700px;
+      }
+
+      h1 {
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      h2 {
+        font-weight: 600;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+
+    <!-- Top Promo Bar -->
+    <div class="bg-black text-white text-center py-2 text-sm font-normal">
+      <span>⚡ Unlock the Magic of Travel with Travila - Your Gateway to Extraordinary Experiences</span>
+      <a href="#" class="text-yellow-400 font-medium ml-2 hover:underline">Get This Now →</a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-8 py-4 shadow-sm bg-white sticky top-0 z-50">
+      <div class="flex items-center space-x-2">
+        <img src="./assets/images/logo.png" alt="Travila Logo" class="h-10 w-10" />
+        <h1 class="text-2xl font-bold">Travila</h1>
+      </div>
+      <nav class="hidden md:flex space-x-1 text-sm font-normal">
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Home</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Tours</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Destinations</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Activities</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Hotel</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Rental</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Tickets</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Pages</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Blog</a>
+        <a href="#" class="px-3 py-2 hover:text-yellow-500 transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <select class="border border-gray-300 rounded-md text-sm p-2 bg-white cursor-pointer font-normal">
+          <option>EN</option>
+          <option>FR</option>
+        </select>
+        <select class="border border-gray-300 rounded-md text-sm p-2 bg-white cursor-pointer font-normal">
+          <option>USD</option>
+          <option>EUR</option>
+        </select>
+        <button class="p-2 rounded-full hover:bg-gray-100 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 3v1m0 16v1m8.66-11.66l-.71.71M4.05 19.95l-.71.71M21 12h1M2 12H1m16.95 7.95l.71.71M3.34 4.05l.71.71M12 5a7 7 0 100 14 7 7 0 000-14z" />
+          </svg>
+        </button>
+        <button class="bg-yellow-400 px-5 py-2 rounded-md font-medium hover:bg-yellow-500 transition text-gray-900">Sign in</button>
+        <button class="p-2 rounded-md bg-yellow-400 hover:bg-yellow-500 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="black" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+      <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between px-8 lg:px-20 py-20 lg:py-32 gap-12">
+
+        <!-- Left Text -->
+        <div class="max-w-2xl z-20">
+          <span class="bg-yellow-400 text-gray-900 px-5 py-2 rounded-full text-sm font-medium inline-block shadow-lg">
+            Discovery the World
+          </span>
+          <h1 class="text-5xl lg:text-6xl font-bold mt-6 leading-tight text-black">
+            Unleash Your Wanderlust<br />Book Your Next Journey
+          </h1>
+          <p class="mt-6 text-lg leading-relaxed text-gray-900">
+            Crafting Exceptional Journeys: Your Global Escape Planner. Unleash Your Wanderlust. Seamless Travel, Extraordinary Adventures.
+          </p>
+          
+          <!-- Arrow Navigation -->
+          <div class="flex space-x-4 mt-12">
+            <button class="bg-white p-3 rounded-full shadow-lg hover:bg-yellow-400 transition font-medium text-lg">←</button>
+            <button class="bg-white p-3 rounded-full shadow-lg hover:bg-yellow-400 transition font-medium text-lg">→</button>
+          </div>
+        </div>
+
+        <!-- Right Image Stack -->
+        <div class="hidden lg:flex flex-col space-y-4 z-20 flex-shrink-0">
+          <img src="./assets/images/travel1.png" alt="Travel destination 1"
+            class="rounded-3xl border-4 border-yellow-400 w-64 h-40 object-cover shadow-2xl" />
+          <img src="./assets/images/travel2.png" alt="Travel destination 2"
+            class="rounded-3xl w-64 h-40 object-cover shadow-2xl" />
+          <img src="./assets/images/travel3.png" alt="Travel destination 3"
+            class="rounded-3xl w-64 h-40 object-cover shadow-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Box -->
+    <section class="relative -mt-24 z-30 px-4 md:px-8 pb-16">
+      <div class="bg-white rounded-3xl shadow-2xl p-8 max-w-6xl mx-auto">
+        
+        <!-- Tab Navigation -->
+        <div class="flex space-x-6 mb-8 border-b border-gray-200 pb-4 overflow-x-auto">
+          <button class="bg-black text-white px-7 py-3 rounded-full font-medium text-base whitespace-nowrap">Tours</button>
+          <button class="text-gray-600 px-7 py-3 hover:text-yellow-500 font-normal text-base whitespace-nowrap">Hotels</button>
+          <button class="text-gray-600 px-7 py-3 hover:text-yellow-500 font-normal text-base whitespace-nowrap">Tickets</button>
+          <button class="text-gray-600 px-7 py-3 hover:text-yellow-500 font-normal text-base whitespace-nowrap">Rental</button>
+          <button class="text-gray-600 px-7 py-3 hover:text-yellow-500 font-normal text-base whitespace-nowrap">Activities</button>
+          <div class="flex-1 flex justify-end items-center text-gray-500 text-sm font-normal">
+            <span>💬 Need some help?</span>
+          </div>
+        </div>
+
+        <!-- Search Inputs -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+          <div>
+            <label class="text-sm font-medium text-gray-800 block mb-2">Location</label>
+            <div class="flex items-center border-2 border-gray-300 rounded-lg px-4 py-3 hover:border-yellow-400 transition">
+              <span class="text-gray-400 mr-3">📍</span>
+              <input type="text" value="New York, USA" 
+                class="w-full focus:outline-none font-normal text-gray-900 bg-transparent" />
+              <span class="text-gray-400 ml-2">▼</span>
+            </div>
+          </div>
+          
+          <div>
+            <label class="text-sm font-medium text-gray-800 block mb-2">Check In</label>
+            <div class="flex items-center border-2 border-gray-300 rounded-lg px-4 py-3 hover:border-yellow-400 transition">
+              <span class="text-gray-400 mr-3">📅</span>
+              <input type="text" value="02 January 2024" 
+                class="w-full focus:outline-none font-normal text-gray-900 bg-transparent" />
+              <span class="text-gray-400 ml-2">▼</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="text-sm font-medium text-gray-800 block mb-2">Check Out</label>
+            <div class="flex items-center border-2 border-gray-300 rounded-lg px-4 py-3 hover:border-yellow-400 transition">
+              <span class="text-gray-400 mr-3">📅</span>
+              <input type="text" value="02 January 2024" 
+                class="w-full focus:outline-none font-normal text-gray-900 bg-transparent" />
+              <span class="text-gray-400 ml-2">▼</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="text-sm font-medium text-gray-800 block mb-2">Guest</label>
+            <div class="flex items-center border-2 border-gray-300 rounded-lg px-4 py-3 hover:border-yellow-400 transition">
+              <span class="text-gray-400 mr-3">👥</span>
+              <input type="text" value="2 adults, 2 children" 
+                class="w-full focus:outline-none font-normal text-gray-900 bg-transparent" />
+              <span class="text-gray-400 ml-2">▼</span>
+            </div>
+          </div>
+
+          <div>
+            <button class="bg-black text-white w-full py-3 rounded-lg hover:bg-gray-800 transition font-medium flex items-center justify-center space-x-2 text-base">
+              <span>🔍</span>
+              <span>Search</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Tours Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Header -->
+        <div class="flex justify-between items-start mb-12">
+          <div>
+            <h2 class="text-4xl font-bold text-black mb-2">Our Featured Tours</h2>
+            <p class="text-gray-600 text-base">Favorite destinations based on customer reviews</p>
+          </div>
+          
+          <!-- Filters -->
+          <div class="flex space-x-3">
+            <button class="bg-gray-200 hover:bg-gray-300 transition px-5 py-2 rounded-full text-sm font-normal">Categories ▼</button>
+            <button class="bg-gray-200 hover:bg-gray-300 transition px-5 py-2 rounded-full text-sm font-normal">Duration ▼</button>
+            <button class="bg-gray-200 hover:bg-gray-300 transition px-5 py-2 rounded-full text-sm font-normal">Review / Rating ▼</button>
+            <button class="bg-gray-200 hover:bg-gray-300 transition px-5 py-2 rounded-full text-sm font-normal">Price range ▼</button>
+          </div>
+        </div>
+
+        <!-- Featured Tours Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Tour Card 1 -->
+          <div class="shadow-lg hover:shadow-xl transition rounded-3xl overflow-hidden">
+            <div class="relative bg-gray-300 overflow-hidden" style="height: 280px;">
+              <img src="./assets/images/tour1.png" alt="California Sunset" class="w-full h-full object-cover" />
+              <span class="absolute top-4 left-4 bg-white text-orange-400 px-4 py-1 rounded-full text-sm font-medium">Top Rated</span>
+              <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-yellow-400 transition">♡</button>
+            </div>
+            <div class="bg-white p-6">
+              <h3 class="text-lg font-bold text-black mb-3">California Sunset/Twilight Boat Cruise</h3>
+              <div class="flex space-x-4 text-sm text-gray-600 mb-3">
+                <span>⏱ 2 days 3 nights</span>
+                <span>👥 4-6 guest</span>
+              </div>
+              <div class="flex items-center mb-5">
+                <span class="text-yellow-400 font-bold">★ 4.96</span>
+                <span class="text-gray-600 text-sm ml-1">(672 reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-black">$48.25 <span class="text-sm font-normal text-gray-600">/ person</span></span>
+                <button class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 2 -->
+          <div class="shadow-lg hover:shadow-xl transition rounded-3xl overflow-hidden">
+            <div class="relative bg-gray-300 overflow-hidden" style="height: 280px;">
+              <img src="./assets/images/tour2.png" alt="NYC Food Tasting" class="w-full h-full object-cover" />
+              <span class="absolute top-4 left-4 bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium">Best Sale</span>
+              <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-yellow-400 transition">♡</button>
+            </div>
+            <div class="bg-white p-6">
+              <h3 class="text-lg font-bold text-black mb-3">NYC: Food Tastings and Culture Tour</h3>
+              <div class="flex space-x-4 text-sm text-gray-600 mb-3">
+                <span>⏱ 3 days 3 nights</span>
+                <span>👥 4-6 guest</span>
+              </div>
+              <div class="flex items-center mb-5">
+                <span class="text-yellow-400 font-bold">★ 4.96</span>
+                <span class="text-gray-600 text-sm ml-1">(672 reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-black">$17.32 <span class="text-sm font-normal text-gray-600">/ person</span></span>
+                <button class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 3 -->
+          <div class="shadow-lg hover:shadow-xl transition rounded-3xl overflow-hidden">
+            <div class="relative bg-gray-300 overflow-hidden" style="height: 280px;">
+              <img src="./assets/images/tour3.png" alt="Grand Canyon" class="w-full h-full object-cover" />
+              <span class="absolute top-4 left-4 bg-yellow-100 text-orange-500 px-4 py-1 rounded-full text-sm font-medium">25% Off</span>
+              <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-yellow-400 transition">♡</button>
+            </div>
+            <div class="bg-white p-6">
+              <h3 class="text-lg font-bold text-black mb-3">Grand Canyon Horseshoe Bend 2 days</h3>
+              <div class="flex space-x-4 text-sm text-gray-600 mb-3">
+                <span>⏱ 7 days 6 nights</span>
+                <span>👥 4-6 guest</span>
+              </div>
+              <div class="flex items-center mb-5">
+                <span class="text-yellow-400 font-bold">★ 4.96</span>
+                <span class="text-gray-600 text-sm ml-1">(672 reviews)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-black">$15.63 <span class="text-sm font-normal text-gray-600">/ person</span></span>
+                <button class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Categories Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-12">
+          <div>
+            <h2 class="text-4xl font-bold text-black mb-2">Top Categories of Tours</h2>
+            <p class="text-gray-600 text-base">Favorite destinations based on customer reviews</p>
+          </div>
+          <button class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition font-medium">View More →</button>
+        </div>
+
+        <!-- Categories Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Category 1 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/mountain.png" alt="Mountain" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Mountain</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/safari.png" alt="Safari" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Safari</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/desert.png" alt="Desert" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Desert</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/flowers.png" alt="Flower" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Flower</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/beach.png" alt="Beach" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Beach</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/temple.png" alt="Temples" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Temples</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+
+          <!-- Category 7 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/yacht.png" alt="Yacht" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Yacht</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+
+          <!-- Category 8 -->
+          <div class="group cursor-pointer bg-white rounded-3xl border border-gray-200 p-5 hover:shadow-xl transition">
+            <div class="relative h-40 bg-gray-300 rounded-2xl overflow-hidden mb-4">
+              <img src="./assets/images/valley.png" alt="Valley" class="w-full h-full object-cover group-hover:scale-105 transition" />
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold text-black">Valley</h3>
+                <p class="text-sm text-gray-600">356 Tours, 248 Activities</p>
+              </div>
+              <span class="text-2xl text-gray-400 group-hover:text-black transition">→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promotional Banners Section -->
+    <!-- Promotional Banners Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Banner 1 -->
+          <div class="relative rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition" style="height: 280px;">
+            <img src="./assets/images/promo1.png" alt="Waking up in a far away place" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 p-8 flex items-center justify-start">
+              <div class="z-10 max-w-xs">
+                <h3 class="text-3xl font-bold text-black mb-4 leading-tight">Waking up<br/>in a far<br/>away place</h3>
+                <button class="bg-yellow-400 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-500 transition flex items-center space-x-2">
+                  <span>View More</span>
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner 2 -->
+          <div class="relative rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition" style="height: 280px;">
+            <img src="./assets/images/promo2.png" alt="Big promotion at the end of the year" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 p-8 flex items-center justify-start">
+              <div class="z-10 max-w-xs">
+                <h3 class="text-3xl font-bold text-black mb-6 leading-tight">Big promotion<br/>at the end of<br/>the year</h3>
+                <button class="bg-yellow-400 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-500 transition flex items-center space-x-2">
+                  <span>View More</span>
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Rated Hotels Section with Slider -->
+    <!-- Top Rated Hotels Section with Slider -->
+    <section class="py-16 relative" style="background-color: #FFF0EC;">
+      <!-- Background Image -->
+      <div class="absolute inset-0 opacity-30">
+        <img src="./assets/images/image4.png" alt="Background" class="w-full h-full object-cover" />
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-8 relative z-10">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-12">
+          <div>
+            <h2 class="text-4xl font-bold text-black mb-2">Top Rated Hotels</h2>
+            <p class="text-gray-600 text-base">Quality as judged by customers. Book at the ideal price!</p>
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <div class="flex space-x-3">
+            <button id="hotelPrevBtn" class="bg-white hover:bg-gray-100 p-3 rounded-full shadow transition">
+              <span class="text-xl">←</span>
+            </button>
+            <button id="hotelNextBtn" class="bg-white hover:bg-gray-100 p-3 rounded-full shadow transition">
+              <span class="text-xl">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hotels Slider Container -->
+        <div class="relative overflow-hidden">
+          <div id="hotelSlider" class="flex transition-transform duration-500 ease-in-out gap-6">
+            
+            <!-- Hotel Card 1 -->
+            <div class="flex-shrink-0 w-full md:w-[calc(33.333%-16px)] shadow-lg hover:shadow-xl transition rounded-3xl overflow-hidden bg-white">
+              <div class="relative bg-gray-300 overflow-hidden" style="height: 280px;">
+                <img src="./assets/images/hotel1.png" alt="California Sunset" class="w-full h-full object-cover" />
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-yellow-400 transition">♡</button>
+                <div class="absolute bottom-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex items-center">
+                  <span class="mr-1">★</span>
+                  <span>4.96</span>
+                  <span class="text-xs ml-1">(672 reviews)</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-black mb-2">California Sunset/Twilight Boat Cruise</h3>
+                <p class="text-sm text-gray-600 mb-4">📍 Manchester, England</p>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-400">★★★★★</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-black">$48.25 <span class="text-sm font-normal text-gray-600">/ person</span></span>
+                  <button class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel Card 2 -->
+            <div class="flex-shrink-0 w-full md:w-[calc(33.333%-16px)] shadow-lg hover:shadow-xl transition rounded-3xl overflow-hidden bg-white">
+              <div class="relative bg-gray-300 overflow-hidden" style="height: 280px;">
+                <img src="./assets/images/hotel2.png" alt="NYC Food Tasting" class="w-full h-full object-cover" />
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-yellow-400 transition">♡</button>
+                <div class="absolute bottom-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex items-center">
+                  <span class="mr-1">★</span>
+                  <span>4.96</span>
+                  <span class="text-xs ml-1">(672 reviews)</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-black mb-2">NYC: Food Tastings and Culture Tour</h3>
+                <p class="text-sm text-gray-600 mb-4">📍 Manchester, England</p>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-400">★★★★★</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-black">$17.32 <span class="text-sm font-normal text-gray-600">/ person</span></span>
+                  <button class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel Card 3 -->
+            <div class="flex-shrink-0 w-full md:w-[calc(33.333%-16px)] shadow-lg hover:shadow-xl transition rounded-3xl overflow-hidden bg-white">
+              <div class="relative bg-gray-300 overflow-hidden" style="height: 280px;">
+                <img src="./assets/images/hotel3.png" alt="Grand Canyon" class="w-full h-full object-cover" />
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-yellow-400 transition">♡</button>
+                <div class="absolute bottom-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex items-center">
+                  <span class="mr-1">★</span>
+                  <span>4.96</span>
+                  <span class="text-xs ml-1">(672 reviews)</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-black mb-2">Grand Canyon Horseshoe Bend 2 days</h3>
+                <p class="text-sm text-gray-600 mb-4">📍 Manchester, England</p>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-400">★★★★★</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-black">$15.63 <span class="text-sm font-normal text-gray-600">/ person</span></span>
+                  <button class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel Card 4 (Duplicate for sliding) -->
+            <div class="flex-shrink-0 w-full md:w-[calc(33.333%-16px)] shadow-lg hover:shadow-xl transition rounded-3xl overflow-hidden bg-white">
+              <div class="relative bg-gray-300 overflow-hidden" style="height: 280px;">
+                <img src="./assets/images/hotel1.png" alt="California Sunset" class="w-full h-full object-cover" />
+                <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-yellow-400 transition">♡</button>
+                <div class="absolute bottom-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex items-center">
+                  <span class="mr-1">★</span>
+                  <span>4.96</span>
+                  <span class="text-xs ml-1">(672 reviews)</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-black mb-2">California Sunset/Twilight Boat Cruise</h3>
+                <p class="text-sm text-gray-600 mb-4">📍 Manchester, England</p>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-400">★★★★★</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-2xl font-bold text-black">$48.25 <span class="text-sm font-normal text-gray-600">/ person</span></span>
+                  <button class="bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Luxury Travel Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="rounded-3xl p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-12" style="background-color: #EFEFEB;">
+      
+      <!-- Left Content -->
+      <div class="max-w-xl">
+        <span class="bg-white text-black px-6 py-2 rounded-full text-sm font-medium inline-block mb-6">
+          Easy payment
+        </span>
+        <h2 class="text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+          Luxury Travel Redefined: Your Passport to Global Glamour
+        </h2>
+        <p class="text-gray-600 text-base leading-relaxed">
+          Discover how you can offset your adventure's carbon emissions and support the sustainable initiatives practiced by our operators worldwide.
+        </p>
+      </div>
+
+      <!-- Right Image Grid -->
+      <div class="relative flex-shrink-0" style="width: 520px; height: 460px;">
+        
+        <!-- First Column - Large vertical image on left -->
+        <img src="./assets/images/lux3.png" alt="Travel" 
+          class="absolute object-cover shadow-lg" 
+          style="width: 167px; height: 308px; top: 132px; left: 0; border-radius: 56px;" />
+        
+        <!-- Second Column -->
+        <!-- Top-left rounded image -->
+        <img src="./assets/images/lux4.png" alt="Travel" 
+          class="absolute object-cover shadow-lg" 
+          style="width: 167px; height: 261px; top: 0; left: 179px; border-radius: 56px;" />
+        
+        <!-- Middle image with border (highlighted) -->
+        <div class="absolute" style="width: 167px; height: 169px; top: 283px; left: 179px;">
+          <div>
+            <img src="./assets/images/lux2.png" alt="Travel" 
+              class="w-full h-full object-cover rounded-[52px] shadow-lg" />
+          </div>
+        </div>
+        
+        <!-- Third Column -->
+        <!-- Top-right rounded image -->
+        <img src="./assets/images/lux5.png" alt="Travel" 
+          class="absolute object-cover shadow-lg" 
+          style="width: 167px; height: 167px; top: 0; left: 358px; border-radius: 56px;" />
+        
+        <!-- Bottom-right tall image -->
+        <img src="./assets/images/lux1.png" alt="Travel" 
+          class="absolute object-cover shadow-lg" 
+          style="width: 167px; height: 261px; top: 174px; left: 358px; border-radius: 56px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Travel With Us Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-8">
+    
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-black mb-3">Why Travel With Us?</h2>
+      <p class="text-gray-600 text-base">The best booking platform you can trust</p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      
+      <!-- Card 1 -->
+      <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 text-center">
+        <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+          <span class="text-3xl">🛡️</span>
+        </div>
+        <h3 class="text-lg font-bold text-black mb-3">Security Assurance</h3>
+        <p class="text-sm text-gray-600 mb-5 leading-relaxed">
+          Demonstrates commitment to user data security through encryption and secure payment practices
+        </p>
+        <a href="#" class="text-sm font-medium text-black hover:text-yellow-600 transition inline-flex items-center">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 text-center">
+        <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+          <span class="text-3xl">👨‍💼</span>
+        </div>
+        <h3 class="text-lg font-bold text-black mb-3">Security Assurance</h3>
+        <p class="text-sm text-gray-600 mb-5 leading-relaxed">
+          Demonstrates commitment to user data security through encryption and secure payment practices
+        </p>
+        <a href="#" class="text-sm font-medium text-black hover:text-yellow-600 transition inline-flex items-center">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 text-center">
+        <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+          <span class="text-3xl">🤝</span>
+        </div>
+        <h3 class="text-lg font-bold text-black mb-3">Security Assurance</h3>
+        <p class="text-sm text-gray-600 mb-5 leading-relaxed">
+          Demonstrates commitment to user data security through encryption and secure payment practices
+        </p>
+        <a href="#" class="text-sm font-medium text-black hover:text-yellow-600 transition inline-flex items-center">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-3xl p-8 text-center">
+        <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+          <span class="text-3xl">📄</span>
+        </div>
+        <h3 class="text-lg font-bold text-black mb-3">Security Assurance</h3>
+        <p class="text-sm text-gray-600 mb-5 leading-relaxed">
+          Demonstrates commitment to user data security through encryption and secure payment practices
+        </p>
+        <a href="#" class="text-sm font-medium text-black hover:text-yellow-600 transition inline-flex items-center">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+   <!-- Payment Methods -->
+<div class="flex flex-wrap items-center justify-center gap-8">
+  <img src="./assets/images/paypal.png" alt="PayPal" class="h-5 object-contain hover:opacity-80 transition" />
+  <img src="./assets/images/stripe.png" alt="Stripe" class="h-5 object-contain hover:opacity-80 transition" />
+  <img src="./assets/images/payoneer.png" alt="Payoneer" class="h-5 object-contain hover:opacity-80 transition" />
+  <img src="./assets/images/visa.png" alt="Visa" class="h-5 object-contain hover:opacity-80 transition" />
+  <img src="./assets/images/cashapp.png" alt="Cash App" class="h-5 object-contain hover:opacity-80 transition" />
+  <img src="./assets/images/bitcoin.png" alt="Bitcoin" class="h-5 object-contain hover:opacity-80 transition" />
+  <img src="./assets/images/discover.png" alt="Discover" class="h-5 object-contain hover:opacity-80 transition" />
+</div>
+  </div>
+</section>
+
+<!-- Recent Launched Car Section -->
+<section class="py-16" style="background-color: #E4F9F9;">
+  <div class="max-w-7xl mx-auto px-8">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-start mb-12">
+      <div>
+        <h2 class="text-4xl font-bold text-black mb-2">Recent Launched Car</h2>
+        <p class="text-gray-600 text-base">The world's leading car brands</p>
+      </div>
+      
+      <!-- Navigation Arrows -->
+      <div class="flex space-x-3">
+        <button id="carPrevBtn" class="bg-white hover:bg-gray-100 p-3 rounded-full shadow transition">
+          <span class="text-xl">←</span>
+        </button>
+        <button id="carNextBtn" class="bg-white hover:bg-gray-100 p-3 rounded-full shadow transition">
+          <span class="text-xl">→</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Car Slider Container -->
+    <div class="relative overflow-hidden">
+      <div id="carSlider" class="flex transition-transform duration-500 ease-in-out gap-5">
+        
+        <!-- Car Card 1 -->
+        <div class="flex-shrink-0 bg-white rounded-[32px] border border-gray-200 overflow-hidden" style="width: 403px; height: 631px;">
+          <!-- Car Image -->
+          <div class="relative" style="width: 401px; height: 326px;">
+            <img src="./assets/images/car1.png" alt="Audi A3" class="w-full h-full object-cover" />
+            <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-gray-100 transition">
+              <span class="text-xl">♡</span>
+            </button>
+            <div class="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
+              <span class="text-yellow-400 mr-1">★</span>
+              <span class="text-black">4.96</span>
+              <span class="text-gray-600 text-xs ml-1">(672 reviews)</span>
+            </div>
+          </div>
+          
+          <!-- Car Description -->
+          <div class="bg-white rounded-[30px] p-6" style="height: 343px;">
+            <h3 class="text-xl font-bold text-black mb-2">Audi A3 1.6 TDI S line</h3>
+            <p class="text-sm text-gray-600 mb-4">📍 Manchester, England</p>
+            
+            <!-- Specifications -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">🛣️</span>
+                <span>25,100 miles</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⚙️</span>
+                <span>Automatic</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⛽</span>
+                <span>Diesel</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">💺</span>
+                <span>7 seats</span>
+              </div>
+            </div>
+            
+            <!-- Price and Book Button -->
+            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+              <div>
+                <span class="text-2xl font-bold text-black">$498.25</span>
+                <span class="text-sm text-gray-600"> / person</span>
+              </div>
+              <button class="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car Card 2 -->
+        <div class="flex-shrink-0 bg-white rounded-[32px] border border-gray-200 overflow-hidden" style="width: 403px; height: 631px;">
+          <!-- Car Image -->
+          <div class="relative" style="width: 401px; height: 326px;">
+            <img src="./assets/images/car2.png" alt="Audi A3" class="w-full h-full object-cover" />
+            <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-gray-100 transition">
+              <span class="text-xl">♡</span>
+            </button>
+            <div class="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
+              <span class="text-yellow-400 mr-1">★</span>
+              <span class="text-black">4.96</span>
+              <span class="text-gray-600 text-xs ml-1">(672 reviews)</span>
+            </div>
+          </div>
+          
+          <!-- Car Description -->
+          <div class="bg-white rounded-[30px] p-6" style="height: 343px;">
+            <h3 class="text-xl font-bold text-black mb-2">Audi A3 1.6 TDI S line</h3>
+            <p class="text-sm text-gray-600 mb-4">📍 Manchester, England</p>
+            
+            <!-- Specifications -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">🛣️</span>
+                <span>25,100 miles</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⚙️</span>
+                <span>Automatic</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⛽</span>
+                <span>Diesel</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">💺</span>
+                <span>7 seats</span>
+              </div>
+            </div>
+            
+            <!-- Price and Book Button -->
+            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+              <div>
+                <span class="text-2xl font-bold text-black">$498.25</span>
+                <span class="text-sm text-gray-600"> / person</span>
+              </div>
+              <button class="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car Card 3 -->
+        <div class="flex-shrink-0 bg-white rounded-[32px] border border-gray-200 overflow-hidden" style="width: 403px; height: 631px;">
+          <!-- Car Image -->
+          <div class="relative" style="width: 401px; height: 326px;">
+            <img src="./assets/images/car3.png" alt="Audi A3" class="w-full h-full object-cover" />
+            <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-gray-100 transition">
+              <span class="text-xl">♡</span>
+            </button>
+            <div class="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
+              <span class="text-yellow-400 mr-1">★</span>
+              <span class="text-black">4.96</span>
+              <span class="text-gray-600 text-xs ml-1">(672 reviews)</span>
+            </div>
+          </div>
+          
+          <!-- Car Description -->
+          <div class="bg-white rounded-[30px] p-6" style="height: 343px;">
+            <h3 class="text-xl font-bold text-black mb-2">Audi A3 1.6 TDI S line</h3>
+            <p class="text-sm text-gray-600 mb-4">📍 Manchester, England</p>
+            
+            <!-- Specifications -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">🛣️</span>
+                <span>25,100 miles</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⚙️</span>
+                <span>Automatic</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⛽</span>
+                <span>Diesel</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">💺</span>
+                <span>7 seats</span>
+              </div>
+            </div>
+            
+            <!-- Price and Book Button -->
+            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+              <div>
+                <span class="text-2xl font-bold text-black">$498.25</span>
+                <span class="text-sm text-gray-600"> / person</span>
+              </div>
+              <button class="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car Card 4 -->
+        <div class="flex-shrink-0 bg-white rounded-[32px] border border-gray-200 overflow-hidden" style="width: 403px; height: 631px;">
+          <!-- Car Image -->
+          <div class="relative" style="width: 401px; height: 326px;">
+            <img src="./assets/images/car4.png" alt="Audi A3" class="w-full h-full object-cover" />
+            <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-gray-100 transition">
+              <span class="text-xl">♡</span>
+            </button>
+            <div class="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
+              <span class="text-yellow-400 mr-1">★</span>
+              <span class="text-black">4.96</span>
+              <span class="text-gray-600 text-xs ml-1">(672 reviews)</span>
+            </div>
+          </div>
+          
+          <!-- Car Description -->
+          <div class="bg-white rounded-[30px] p-6" style="height: 343px;">
+            <h3 class="text-xl font-bold text-black mb-2">Audi A3 1.6 TDI S line</h3>
+            <p class="text-sm text-gray-600 mb-4">📍 New South Wales, Australia</p>
+            
+            <!-- Specifications -->
+            <div class="grid grid-cols-2 gap-3 mb-6">
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">🛣️</span>
+                <span>25,100 miles</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⚙️</span>
+                <span>Automatic</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">⛽</span>
+                <span>Diesel</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <span class="mr-2">💺</span>
+                <span>7 seats</span>
+              </div>
+            </div>
+            
+            <!-- Price and Book Button -->
+            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+              <div>
+                <span class="text-2xl font-bold text-black">$498.25</span>
+                <span class="text-sm text-gray-600"> / person</span>
+              </div>
+              <button class="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition font-medium text-sm">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Search by Category Section -->
+<section class="py-5" style="background-color: #E4F9F9;">
+  <div class="max-w-7xl mx-auto px-8">
+    
+    <!-- Header -->
+    <div class="mb-12">
+      <h2 class="text-4xl font-bold text-black mb-2">Search by category</h2>
+      <p class="text-gray-600 text-base">There has 30+ Brand Category Available</p>
+    </div>
+
+    <!-- Brand Logos -->
+    <div class="flex flex-wrap items-center gap-4">
+      
+      <!-- Lexus -->
+      <div class="bg-white rounded-2xl p-6 hover:shadow-lg transition cursor-pointer" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+        <img src="./assets/images/lexus.png" alt="Lexus" class="max-w-full max-h-full object-contain" />
+      </div>
+
+      <!-- Mercedes -->
+      <div class="bg-white rounded-2xl p-6 hover:shadow-lg transition cursor-pointer" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+        <img src="./assets/images/benz.png" alt="Mercedes" class="max-w-full max-h-full object-contain" />
+      </div>
+
+      <!-- Bugatti -->
+      <div class="bg-white rounded-2xl p-6 hover:shadow-lg transition cursor-pointer" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+        <img src="./assets/images/jag.png" alt="Bugatti" class="max-w-full max-h-full object-contain" />
+      </div>
+
+      <!-- Jaguar -->
+      <div class="bg-white rounded-2xl p-6 hover:shadow-lg transition cursor-pointer" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+        <img src="./assets/images/chev.png" alt="Jaguar" class="max-w-full max-h-full object-contain" />
+      </div>
+
+      <!-- Honda -->
+      <div class="bg-white rounded-2xl p-6 hover:shadow-lg transition cursor-pointer" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+        <img src="./assets/images/honda.png" alt="Honda" class="max-w-full max-h-full object-contain" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section 
+  class="w-[1920px] h-[389px] mt-[100px] bg-cover bg-center border-b border-gray-200 flex flex-col justify-center px-20 overflow-hidden"
+  style="background-image: url('./assets/images/bg1.png'); opacity: 1;"
+>
+  <!-- Header -->
+  <div class="mb-6">
+    <div class="inline-flex items-center gap-2 bg-yellow-300 px-4 py-1 rounded-full font-medium">
+      <div class="flex -space-x-2">
+        <img src="./assets/images/profile1.png" class="w-5 h-5 rounded-full border-2 border-white" />
+        <img src="./assets/images/profile2.png" class="w-5 h-5 rounded-full border-2 border-white" />
+        <img src="./assets/images/profile3.png" class="w-5 h-5 rounded-full border-2 border-white" />
+      </div>
+      <span class="text-sm">Testimonials</span>
+    </div>
+    <h2 class="text-3xl font-bold text-gray-900 mt-3 leading-tight">Don't take our word for it</h2>
+  </div>
+
+  <!-- Testimonials Row -->
+  <div class="flex gap-6 whitespace-nowrap overflow-x-hidden">
+    <!-- Card 1 -->
+    <div class="w-[470px] h-[299px] flex-shrink-0 border border-gray-200 rounded-[32px] p-6 bg-white/90 backdrop-blur-md flex flex-col justify-between shadow-md">
+      <div class="flex-1">
+        <h3 class="text-base font-semibold text-gray-900 mb-2">The best booking system</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          I've been using the hotel booking system for several years now, and it's become my go-to platform for planning my trips.
+          The interface is user-friendly, and I appreciate the detailed information and real-time availability of hotels.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 mt-4">
+        <img src="./assets/images/profile1.png" alt="Sara Mohamed" class="w-12 h-12 rounded-full object-cover" />
+        <div>
+          <p class="font-semibold text-gray-900 text-sm">Sara Mohamed</p>
+          <p class="text-xs text-gray-500">Jakatar</p>
+        </div>
+        <div class="ml-auto text-yellow-400 text-xs">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="w-[470px] h-[299px] flex-shrink-0 border border-gray-200 rounded-[32px] p-6 bg-white/90 backdrop-blur-md flex flex-col justify-between shadow-md">
+      <div class="flex-1">
+        <h3 class="text-base font-semibold text-gray-900 mb-2">The best booking system</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          I've been using the hotel booking system for several years now, and it's become my go-to platform for planning my trips.
+          The interface is user-friendly, and I appreciate the detailed information and real-time availability of hotels.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 mt-4">
+        <img src="./assets/images/profile2.png" alt="Atend John" class="w-12 h-12 rounded-full object-cover" />
+        <div>
+          <p class="font-semibold text-gray-900 text-sm">Atend John</p>
+          <p class="text-xs text-gray-500">California</p>
+        </div>
+        <div class="ml-auto text-yellow-400 text-xs">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="w-[470px] h-[299px] flex-shrink-0 border border-gray-200 rounded-[32px] p-6 bg-white/90 backdrop-blur-md flex flex-col justify-between shadow-md">
+      <div class="flex-1">
+        <h3 class="text-base font-semibold text-gray-900 mb-2">The best booking system</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          I've been using the hotel booking system for several years now, and it's become my go-to platform for planning my trips.
+          The interface is user-friendly, and I appreciate the detailed information and real-time availability of hotels.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 mt-4">
+        <img src="./assets/images/profile3.png" alt="Sara Mohamed" class="w-12 h-12 rounded-full object-cover" />
+        <div>
+          <p class="font-semibold text-gray-900 text-sm">Sara Mohamed</p>
+          <p class="text-xs text-gray-500">Jakatar</p>
+        </div>
+        <div class="ml-auto text-yellow-400 text-xs">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- News, Tips & Guides Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-8">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-start mb-12">
+      <div>
+        <h2 class="text-4xl font-bold text-black mb-2">News, Tips & Guides</h2>
+        <p class="text-gray-600 text-base">Favorite destinations based on customer reviews</p>
+      </div>
+      <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition font-medium flex items-center gap-2">
+        <span>View More</span>
+        <span>→</span>
+      </button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="news-card bg-white rounded-[32px] border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500" style="width: 388px; height: 505.69px;">
+        <!-- Image Section -->
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="assets/images/news1.png" 
+               alt="Cultural Travel" 
+               class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-white text-black px-4 py-2 rounded-full text-sm font-medium shadow-md">
+            Cultural
+          </span>
+          <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md hover:bg-red-50 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="p-6 flex flex-col justify-between" style="height: 245.69px;">
+          <div>
+            <!-- Meta Info -->
+            <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>18 Sep 2024</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>6 mins</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+                <span>38 comments</span>
+              </div>
+            </div>
+            
+            <!-- Title -->
+            <h3 class="text-lg font-bold text-black mb-4 leading-tight">
+              Ultimate Travel Planning Guide: 10 Tips for a Seamless Journey
+            </h3>
+          </div>
+          
+          <!-- Author & CTA -->
+          <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pravatar.cc/40?img=1" alt="Jimmy Dave" class="w-10 h-10 rounded-full" />
+              <span class="text-sm font-medium text-black">Jimmy Dave</span>
+            </div>
+            <button class="bg-gray-100 text-black px-4 py-2 rounded-lg hover:bg-yellow-400 transition font-medium text-sm">
+              Keep Reading
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="news-card bg-white rounded-[32px] border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500" style="width: 388px; height: 505.69px;">
+        <!-- Image Section -->
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="assets/images/news2.png" 
+               alt="Travel" 
+               class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-white text-black px-4 py-2 rounded-full text-sm font-medium shadow-md">
+            Travel
+          </span>
+          <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md hover:bg-red-50 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="p-6 flex flex-col justify-between" style="height: 245.69px;">
+          <div>
+            <!-- Meta Info -->
+            <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>18 Sep 2024</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>6 mins</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+                <span>38 comments</span>
+              </div>
+            </div>
+            
+            <!-- Title -->
+            <h3 class="text-lg font-bold text-black mb-4 leading-tight">
+              Top 10 Travel Hacks for Budget-Conscious Adventurers
+            </h3>
+          </div>
+          
+          <!-- Author & CTA -->
+          <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pravatar.cc/40?img=2" alt="Jimmy Dave" class="w-10 h-10 rounded-full" />
+              <span class="text-sm font-medium text-black">Jimmy Dave</span>
+            </div>
+            <button class="bg-gray-100 text-black px-4 py-2 rounded-lg hover:bg-yellow-400 transition font-medium text-sm">
+              Keep Reading
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="news-card bg-white rounded-[32px] border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500" style="width: 388px; height: 505.69px;">
+        <!-- Image Section -->
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="assets/images/new3.png" 
+               alt="Discovery" 
+               class="w-full h-full object-cover" />
+          <span class="absolute top-4 left-4 bg-white text-black px-4 py-2 rounded-full text-sm font-medium shadow-md">
+            Discovery
+          </span>
+          <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md hover:bg-red-50 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="p-6 flex flex-col justify-between" style="height: 245.69px;">
+          <div>
+            <!-- Meta Info -->
+            <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>18 Sep 2024</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>6 mins</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+                <span>38 comments</span>
+              </div>
+            </div>
+            
+            <!-- Title -->
+            <h3 class="text-lg font-bold text-black mb-4 leading-tight">
+              Discovering Hidden Gems: 10 Off-the-Beaten-Path Travel Tips
+            </h3>
+          </div>
+          
+          <!-- Author & CTA -->
+          <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pravatar.cc/40?img=3" alt="Jimmy Dave" class="w-10 h-10 rounded-full" />
+              <span class="text-sm font-medium text-black">Jimmy Dave</span>
+            </div>
+            <button class="bg-gray-100 text-black px-4 py-2 rounded-lg hover:bg-yellow-400 transition font-medium text-sm">
+              Keep Reading
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+// Scroll animation for cards
+const observerOptions = {
+  threshold: 0.2,
+  rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 150);
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.news-card').forEach(card => {
+  observer.observe(card);
+});
+</script>
+
+<style>
+.news-card {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+}
+
+.news-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.news-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+</style>
+
+
+
+<!-- Subscribe & Footer Section -->
+<section class="w-full h-[703px] bg-black text-white flex justify-center" style="opacity: 1;">
+  <div class="w-[1248px] h-[663px] pt-[40px] px-8">
+    
+    <!-- Subscribe Box -->
+    <div class="mb-16">
+      <div class="flex justify-between items-center">
+        <div class="max-w-xl">
+          <h2 class="text-3xl font-bold mb-2">Subscribe to see secret deals prices</h2>
+          <h2 class="text-3xl font-bold">drop the moment you sign up!</h2>
+        </div>
+        <div class="flex gap-3">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="w-[280px] px-6 py-3 rounded-full bg-transparent border-2 border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-yellow-400 transition"
+          />
+          <button class="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-800 mb-12"></div>
+
+    <!-- Footer Content -->
+    <div class="grid grid-cols-5 gap-12 mb-12">
+      
+      <!-- Company Info -->
+      <div class="col-span-1">
+        <div class="flex items-center gap-2 mb-6">
+          <img src="./assets/images/logo.png" alt="Travila Logo" class="h-10 w-10" />
+          <h3 class="text-2xl font-bold text-yellow-400">Travila</h3>
+        </div>
+        <div class="space-y-3 text-sm text-gray-400">
+          <p class="flex items-start gap-2">
+            <span>📍</span>
+            <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span>🕒</span>
+            <span>Hours: 8:00 - 17:00, Mon - Sat</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <span>✉️</span>
+            <span>support@travila.com</span>
+          </p>
+        </div>
+        <div class="mt-6">
+          <p class="text-gray-400 text-sm mb-2">Need help? Call us</p>
+          <p class="text-yellow-400 text-xl font-bold">1-800-222-8888</p>
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Support</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-yellow-400 transition">Forum support</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Help Center</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Live chat</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">How it works</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Security</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Privacy</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Charges logs</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Company</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-yellow-400 transition">About Us</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Community Blog</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Jobs and Careers</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Contact Us</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Our Awards</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Agencies</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-yellow-400 transition">Tour Guide</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Tour Booking</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Hotel Booking</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Ticket Booking</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Rental Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-yellow-400 transition">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Cookies Policy</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Data Processing</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Data Policy</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-800 mb-6"></div>
+
+    <!-- Bottom Footer -->
+    <div class="flex justify-between items-center text-sm text-gray-400">
+      <p>© 2024 Travila Inc. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <span>Follow us</span>
+        <div class="flex gap-3">
+          <a href="#" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition">f</a>
+          <a href="#" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition">t</a>
+          <a href="#" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition">in</a>
+          <a href="#" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition">yt</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Scroll to Top Button -->
+<button class="fixed bottom-8 right-8 w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition shadow-lg text-white z-50" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+  ↑
+</button>
+
+  </body>
+</html>
